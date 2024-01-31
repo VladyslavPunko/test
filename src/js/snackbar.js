@@ -2,8 +2,15 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.form');
-const input = form.querySelector('label > input');
+const input = document.querySelector('label > input');
+
 let delay;
+
+input.addEventListener('input', e => {
+  delay = e.currentTarget.value;
+  console.log(delay);
+});
+
 input.addEventListener('input', e => {
   delay = e.currentTarget.value;
 });
