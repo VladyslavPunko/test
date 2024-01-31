@@ -65,7 +65,7 @@ function onClickStart() {
     inputPicker.disabled = true;
 
     if (timeToLeft <= 0) {
-      clearInterval(intervalId);
+      clearInterval(interval);
       inputPicker.disabled = false;
       iziToast.info({ position: 'center', message: 'It is your time!' });
       return;
