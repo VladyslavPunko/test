@@ -2,10 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Snackbar</title>
+    
+    <script type="module" crossorigin src="/test/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/test/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="modulepreload" crossorigin href="/test/assets/vendor-a71e76b7.js">
+    <link rel="stylesheet" href="/test/assets/vendor-0eadb911.css">
+    <link rel="stylesheet" href="/test/assets/snack-bar-e3caa898.css">
   </head>
   <body>
-    <script src="./js/snackbar.js"></script>
+    <section>
+      <h1>Snackbar</h1>
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </section>
+    
   </body>
 </html>
